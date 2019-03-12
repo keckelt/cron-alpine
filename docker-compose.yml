@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  cron_world:
+    build: 
+      context: .
+      args:
+        MINUTE: "*"
+        HOUR: "*"
+        DAY_OF_MONTH: "*"
+        MONTH: "*"
+        DAY_OF_WEEK: "*"
+        COMMAND: "echo Hello world"
